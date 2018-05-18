@@ -8,8 +8,8 @@ private:
     double _real;
     double _image;
 public:
-    Real(int r, int i);
-    String toString() const;
+    Real(double r, double i);
+    String toString() const;//字符串形式为例如"1.2+5.9i"
 };
 
 #endif // REAL_H
