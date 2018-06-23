@@ -1,1 +1,11 @@
-<RCC/>
+<RCC>
+    <qresource prefix="/">
+        <file>var.png</file>
+        <file>clear.png</file>
+        <file>undo.png</file>
+        <file>eqn.png</file>
+        <file>crv.png</file>
+        <file>mtx.png</file>
+        <file>matlab.png</file>
+    </qresource>
+</RCC>

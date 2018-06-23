@@ -2,6 +2,7 @@
 #define MATRIX_H
 
 /*无需考虑两个矩阵无法运算的情况，interpreter会处理*/
+/*
 class Matrix
 {
 private:
@@ -22,5 +23,5 @@ public:
     friend Matrix operator *(const Matrix &m, double f);//矩阵m与实数f相乘
     String toString() const;//元素与元素之间用逗号隔开，行与行之间用分号隔开(最后一行后不需要分号)，例如 "1,2.5,3;3.7,4,8;2,9,100"
 };
-
+*/
 #endif // MATRIX_H

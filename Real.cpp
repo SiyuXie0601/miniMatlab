@@ -1,16 +1,12 @@
 #include "Real.h"
 
-Real::Real()
+
+Real::Real(double r, double i)
 {
 
 }
 
-Real(int r, int i)
-{
-
-}
-
-String toString() const
+string Real::toString() const
 {
 
 }

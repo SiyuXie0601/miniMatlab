@@ -4,22 +4,22 @@ EquationSolution::EquationSolution()
 {
 
 }
-static String solveLnrEqtnWithOneUkn(const String& exp)
+string EquationSolution::solveLnrEqtnWithOneUkn(const string& exp)
 {
 
 }
 
-static String solveQdrtcEqtnWithOneUkn(const String& exp)
+string EquationSolution::solveQdrtcEqtnWithOneUkn(const string& exp)
 {
 
 }
 
-static String solveCbcEqtnWithOneUkn(const String& exp)
+string EquationSolution::solveCbcEqtnWithOneUkn(const string& exp)
 {
 
 }
 
-static String solveLnrEqtnWithTwoUkn(const String& exp)
+string EquationSolution::solveLnrEqtnWithMultiUkn(const string& exp)
 {
 
 }

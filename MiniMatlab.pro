@@ -4,7 +4,8 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui\
+            printsupport
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -19,7 +20,11 @@ SOURCES += main.cpp\
     EquationSolution.cpp \
     IntergrationSolution.cpp \
     interpreter.cpp \
-    Real.cpp
+    Real.cpp \
+    modeldata.cpp \
+    share.cpp \
+    function1.cpp \
+    qcustomplot.cpp
 
 HEADERS  += mainwindow.h \
     Matrix.h \
@@ -27,7 +32,12 @@ HEADERS  += mainwindow.h \
     EquationSolution.h \
     IntergrationSolution.h \
     interpreter.h \
-    Real.h
+    Real.h \
+    modeldata.h \
+    share.h \
+    myexceptions.h \
+    function1.h \
+    qcustomplot.h
 
 FORMS    += mainwindow.ui
 

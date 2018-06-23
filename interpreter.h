@@ -1,22 +1,48 @@
 #ifndef INTERPRETER_H
 #define INTERPRETER_H
-
-
+#include <string>
+#include <vector>
+#include <QString>
+using namespace std;
 class Interpreter
 {
 public:
-    static String parse(const String &instruction);
+    enum Type
+        {
+            Mtrx, Srt, Eqtn, Intg
+        };
+    static QString parse(const QString &instruction);
     Interpreter();
     ~Interpreter();
-private:
-    static Type checkInsType(const String &instruction);
-    static String parseMtrxPro(const String &instruction);
-    static String parseSrtPro(const String &instruction);
-    static String parseEqtnPro(const String &instruction);
-    static String parseIntgPro(const String &instruction);
-    static boolean isCurveCorrect(const String &instruction);
-    static vector parseStr(const String &str);
 
+private:
+//    static Type checkInsType(const string &instruction);
+//    static string parseMtrxPro(const string &instruction);
+//    static string parseSrtPro(const string &instruction);
+//    static string parseEqtnPro(const string &instruction);
+//    static string parseIntgPro(const string &instruction);
+    static bool isCurveCorrect(const string &instruction);
+    static QString parseS();
+    static void lexScanner(const QString &instruction);
+    static QString getToken();
+    static void eat(QString shouldBe);
+    static void eat();
+    static bool isId(QString str);
+    static bool isNum(QString str);
+    static bool isInt(QString str);
+    static void parseV();
+    static void parseM();
+    static void parseQ();
+    static void parseC();
+    static void parseE();
+    static void parseN();
+    static void parseF();
+    static void parseT();
+    static void parseQS();
+    static void parseVS();
+
+    static QStringList tokens;
+    static int curToken;
 };
 
 #endif // INTERPRETER_H
