@@ -1,67 +1,65 @@
 #include "matrix.h"
-/*
-Matrix::Matrix()
+#include <string>
+
+using namespace std;
+
+Matrix::Matrix(const QStringList &mtrxItems, int col, int row)
 {
 
 }
 
-Matrix(const vector &mtrxItems, int col, int row)
+Matrix::Matrix(int col, int row)
 {
 
 }
 
-Matrix(int col, int row)
+int Matrix::getRowNum() const
 {
 
 }
 
-int getRowNum() const
+int Matrix::getColNum() const
 {
 
 }
 
-int getColNum() const
+double  Matrix::get(int i, int j) const
 {
 
 }
 
-double  get(int i, int j) const
+void Matrix::set(int i, int j, double val)
 {
 
 }
 
-void set(int i, int j, double val)
+Matrix operator +(const Matrix &m1, const Matrix &m2)
 {
 
 }
 
-friend Matrix operator +(const Matrix &m1, const Matrix &m2)
+Matrix operator -(const Matrix &m1, const Matrix &m2)
 {
 
 }
 
-friend Matrix operator -(const Matrix &m1, const Matrix &m2)
+Matrix operator *(const Matrix &m1, const Matrix &m2)
 {
 
 }
 
-friend Matrix operator *(const Matrix &m1, const Matrix &m2)
+Matrix operator *(double f, const Matrix &m)
 {
 
 }
 
-friend Matrix operator *(double f, const Matrix &m)
+Matrix operator *(const Matrix &m, double f)
 {
 
 }
 
-friend Matrix operator *(const Matrix &m, double f)
+string Matrix::toString() const
 {
 
 }
 
-String toString() const
-{
-
-}
-*/

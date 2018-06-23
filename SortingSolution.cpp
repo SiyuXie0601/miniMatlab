@@ -1,12 +1,13 @@
 #include "SortingSolution.h"
-/*
+#include <QString>
+
 SortingSolution::SortingSolution()
 {
 
 }
 
-static String sort(const vector &arr, Mode mode)
+QString SortingSolution::sort(const QString &arr, Mode mode)
 {
 
 }
-*/
+

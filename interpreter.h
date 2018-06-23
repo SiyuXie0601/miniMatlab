@@ -16,11 +16,6 @@ public:
     ~Interpreter();
 
 private:
-//    static Type checkInsType(const string &instruction);
-//    static string parseMtrxPro(const string &instruction);
-//    static string parseSrtPro(const string &instruction);
-//    static string parseEqtnPro(const string &instruction);
-//    static string parseIntgPro(const string &instruction);
     static bool isCurveCorrect(const string &instruction);
     static QString parseS();
     static void lexScanner(const QString &instruction);
